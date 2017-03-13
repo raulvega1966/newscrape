@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!--Added link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Homework Week 18 - All the News That's Fit to Scrape: Scraping With Mongoose</title>
+    <style>
+    body {
+        background-color: #F2F6D0
+    }
+    
+    #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+    }
+    
+    #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+    }
+    
+    #notes {
+        float: right;
+        width: 30%;
+    }
+    
+    textarea,
+    input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+    }
+    
+    input {
+        height: 36px;
+        font-size: 24px;
+    }
+    
+    textarea {
+        height: 200px;
+        font-size: 18px;
+    }
+    </style>
+</head>
+
+
+
+<body>
+    <div id="wrapper">
+        <h1>News Scraper</h1>
+        <h2><i>Homework Week 18 - All the News That's Fit to Scrape.</i></h2>
+        
+        <div id="notes">
+            <h2>Write Your Notes Here.......</h2>
+            <input type="text" name="title" placeholder="title">
+            <textarea type="text" name="body" id="createNote">Write Note Here</textarea>
+            <input type="submit">
+            
+        </div>
+        
+      <div id="articles"></div>
+
+          <div id="showNote">
+                <h2>Show Notes Written By Users</h2>
+                <input type="text" id="titleinput">
+                <textarea type="text" name="body" id="notes">Notes</textarea>
+                <input type="submit">
+            </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
